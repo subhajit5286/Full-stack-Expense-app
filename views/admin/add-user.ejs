@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book an Appoinment</title>
+</head>
+<link rel="stylesheet" href="/css/form.css">
+<body>
+    <nav>
+        <a href="/admin/add-users">Admin Add User</a> |
+        <a href="/admin/users">Admin View/Delete User</a> 
+      </nav>
+      <br>
+    <main>
+        <div class="form-center">
+            <form class="product-form" action="/admin/add-users" method="POST">
+                <div class="form-control">
+                    <label for="name">Name</label>
+                    <input type="text" name="name" id="name" > 
+                </div>
+                <div class="form-control">
+                    <label for="email">Email</label>
+                    <input type="text" name="email" id="email" >
+                </div>
+                <div class="form-control">
+                    <label for="phoneNumber">Ph.No.</label>
+                    <input type="text" name="phoneNumber" id="phoneNumber">
+                </div>
+                <button class="btn" type="submit"> Add User</button>
+            </form>
+        </div>
+        
+    </main>
+</body>
+</html>
+

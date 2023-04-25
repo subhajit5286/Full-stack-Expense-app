@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Expense Tracker</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <style>
+        body{
+          background-image: url('https://wallpapercave.com/wp/Soxhq2I.jpg');
+          background-repeat: no-repeat;
+        }
+    </style>
+</head>
+<body>
+    <div class="container-fluid">
+        <header>
+            <h1 style="color:brown;text-align: center;">Expense Tracker App</h1>
+        </header>
+        <form action="" class="form-inline" id="addForm">
+            <div class="form-group">
+                <label for="cea">Choose Expense Amount</label>
+                <input type="text" class="form-control" id="item">
+            </div>
+            <div class="form-group">
+                <label for="cd">Choose Description</label>
+                <input type="text" class="form-control" id="item1">
+            </div>
+            <div class="form-group">
+                <label for="ca">Choose a category</label>
+                <select name="" id="item2" class="form-control" >
+                    <option value="fuel">Fuel</option>
+                    <option value="movie">Movie</option>
+                    <option value="electricity">Electricity</option>
+                    <option value="food">Food</option>
+                </select>
+            </div>
+            <input type="submit" value="Add Expense" class="btn btn-danger">
+        </form>
+        <br>
+        <ul id="items" class="list-group">
+           
+           
+          </ul>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.3.6/dist/axios.min.js"></script>
+     <script src="index1.js"></script>
+</body>
+</html>
